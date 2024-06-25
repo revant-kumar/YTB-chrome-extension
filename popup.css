@@ -1,0 +1,54 @@
+.container {
+  width: 280px;
+  color: #314d3e; /* Text color */
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px; /* Title styling */
+}
+
+.textbox {
+  width: 100%;
+  font-size: 12px;
+  margin: 0;
+  padding: 0px 2px; /* Text input box styling */
+}
+
+.textbox:focus {
+  outline: 0;
+  border-color: #66afe9; /* Focus styling for text input */
+}
+
+.bookmarks {
+  margin: 5px 5px;
+  padding: 3px; /* Styling for the bookmarks container */
+}
+
+.bookmark {
+  display: flex;
+  border-bottom-color: #00254d; /* Border color for each bookmark */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 0.8rem; /* Rounded corners for each bookmark */
+  padding: 3px;
+  padding-bottom: 7px;
+  margin-bottom: 7px; /* Spacing between bookmarks */
+}
+
+.bookmark-title {
+  padding-left: 2px; /* Styling for the bookmark title */
+}
+
+.bookmark-controls img {
+  margin: 0 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer; /* Styling for control buttons (play, delete) */
+}
+
+.bookmark-controls {
+  flex: auto;
+  text-align: right; /* Alignment of control buttons */
+}
