@@ -3,5 +3,10 @@ export async function getActiveTabURL() {
         currentWindow: true,
         active: true
     });
-    return tabs[0];
+
+    if (tabs.length > 0) {
+        return tabs[0];
+    } else {
+        throw new Error("No active tab found");
+    }
 }
