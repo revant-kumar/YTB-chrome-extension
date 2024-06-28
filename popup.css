@@ -1,11 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  width: 280px;
-  color: #314d3e;
+  min-width: 280px;
+  height: fit-content;
+  color: aliceblue;
+  background-color: #212121;
+  padding: 1.5rem;
 }
 
 .title {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
   padding: 8px;
 }
 
@@ -22,19 +30,21 @@
 }
 
 .bookmarks {
-  margin: 5px 5px;
   padding: 3px;
 }
 
 .bookmark {
+  color: rgba(255, 255, 255, 0.738);
+  background-color: #2b2b2b;
   display: flex;
-  border-bottom-color: #00254d;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-radius: 0.8rem;
-  padding: 3px;
+  align-items: center;
+  box-shadow: #ffffff70 1px 2px 1px;
+  border-radius: 8px;
+  padding: 3px; 
   padding-bottom: 7px;
   margin-bottom: 7px;
+  height: 2rem;
+  padding-left: 8px;
 }
 
 .bookmark-title {
