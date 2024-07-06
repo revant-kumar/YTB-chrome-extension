@@ -1,12 +1,12 @@
 export async function getActiveTabURL() {
-    const tabs = await chrome.tabs.query({
-        currentWindow: true,
-        active: true
-    });
-
-    if (tabs.length > 0) {
-        return tabs[0];
-    } else {
-        throw new Error("No active tab found");
-    }
+    let queryOptions = { active: true, currentWindow: true };
+    let [tab] = await chrome.tabs.query(queryOptions);
+    return tab;
 }
+
+export const getTime = t => {
+    var date = new Date(0);
+    date.setSeconds(t);
+
+    return date.toISOString().substr(11, 8);
+};
